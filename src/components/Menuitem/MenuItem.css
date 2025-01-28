@@ -1,0 +1,61 @@
+.app__menuitem {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark); /* Subtle background */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.app__menuitem:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.app__menuitem-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.app__menuitem-name {
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-golden); /* Golden color for the item name */
+}
+
+.app__menuitem-dash {
+    width: 100px;
+    height: 2px;
+    background: var(--color-golden);
+    margin: 0 1rem;
+}
+
+.app__menuitem-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.app__menuitem-description {
+    margin-top: 0.5rem;
+    color: #fff; 
+    font-style: italic;
+    text-align: center;
+}
+
+.app__menuitem-description p {
+    font-size: 1rem;
+    color: #ffffff; 
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
