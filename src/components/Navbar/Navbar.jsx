@@ -8,29 +8,29 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
+    <nav className="app__navbar glassmorphism">
+      <div className="app__navbar-logo hover-scale">
         <img src={images.logo} alt="Fine Dining Logo" className="app__navbar-logo-img" />
       </div>
       
       {/* Main Menu Links */}
       <ul className="app__navbar-links">
-        <li className="p__opensans">
+        <li className="p__opensans hover-scale">
           <a href="#home">Home</a>
         </li>
-        <li className="p__opensans">
+        <li className="p__opensans hover-scale">
           <a href="#about">About</a>
         </li>
-        <li className="p__opensans">
+        <li className="p__opensans hover-scale">
           <a href="#menu">Menu</a>
         </li>
-        <li className="p__opensans">
+        <li className="p__opensans hover-scale">
           <a href="#contact">Contact</a>
         </li>
       </ul>
       
   
-      <div className="app__navbar-booktable">
+      <div className="app__navbar-booktable hover-scale">
         <a href="#booktable">Book Table</a>
       </div>
 

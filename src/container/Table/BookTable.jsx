@@ -26,47 +26,50 @@ const BookTable = () => {
   };
 
   return (
-    <div className="app__booktable" id="booktable">
-      <div className="app__booktable-content">
-        <h1 className="headtext__cormorant">Book Your Table</h1>
-        <p className="p__opensans">Fill out the form to reserve your spot.</p>
+    <div className="app__booktable section-padding" id="booktable">
+      <div className="app__booktable-content glassmorphism">
+        <h1 className="headtext__cormorant text-gradient">Book Your Table</h1>
+        <p className="p__opensans" style={{ color: '#AAAAAA', marginBottom: '3rem' }}>Reserve your culinary journey with us.</p>
 
         <form onSubmit={handleSubmit} className="booktable-form">
           <div className="booktable-form-container">
             {/* Left side - Name, Email, Phone */}
             <div className="booktable-left">
               <div className="booktable-form-group">
-                <label htmlFor="name">Name</label>
+                <label className="p__opensans" htmlFor="name">Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
+                  placeholder="John Doe"
                   required
                 />
               </div>
 
               <div className="booktable-form-group">
-                <label htmlFor="email">Email</label>
+                <label className="p__opensans" htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  placeholder="john@example.com"
                   required
                 />
               </div>
 
               <div className="booktable-form-group">
-                <label htmlFor="phone">Phone</label>
+                <label className="p__opensans" htmlFor="phone">Phone</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
+                  placeholder="+880 1XXX XXXXXX"
                   required
                 />
               </div>
@@ -75,7 +78,7 @@ const BookTable = () => {
             {/* Right side - Guests, Date, Time */}
             <div className="booktable-right">
               <div className="booktable-form-group">
-                <label htmlFor="guests">Guests</label>
+                <label className="p__opensans" htmlFor="guests">Guests</label>
                 <input
                   type="number"
                   id="guests"
@@ -83,12 +86,13 @@ const BookTable = () => {
                   value={formData.guests}
                   onChange={handleInputChange}
                   min="1"
+                  placeholder="2"
                   required
                 />
               </div>
 
               <div className="booktable-form-group">
-                <label htmlFor="date">Date</label>
+                <label className="p__opensans" htmlFor="date">Date</label>
                 <input
                   type="date"
                   id="date"
@@ -100,7 +104,7 @@ const BookTable = () => {
               </div>
 
               <div className="booktable-form-group">
-                <label htmlFor="time">Time</label>
+                <label className="p__opensans" htmlFor="time">Time</label>
                 <input
                   type="time"
                   id="time"
@@ -113,7 +117,7 @@ const BookTable = () => {
             </div>
           </div>
 
-          <button type="submit" className="custom__button">Book Now</button>
+          <button type="submit" className="custom__button hover-scale" style={{ alignSelf: 'center', marginTop: '2rem' }}>Book Now</button>
         </form>
       </div>
     </div>

@@ -10,6 +10,12 @@
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+  
+  /* Modern Tokens */
+  --glass-bg: rgba(12, 12, 12, 0.7);
+  --glass-border: rgba(220, 202, 135, 0.2);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-luxe: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 * {

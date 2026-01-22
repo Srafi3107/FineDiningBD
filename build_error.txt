@@ -1,0 +1,4 @@
+﻿
+> fine_dining@0.1.0 build
+> react-scripts build
+

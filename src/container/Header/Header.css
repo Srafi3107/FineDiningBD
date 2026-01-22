@@ -1,67 +1,75 @@
-
 .app__header {
-    width: 100%;
-    padding: 2rem 0;
-    background-color: #000; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem; 
+    background-color: var(--color-black);
+    min-height: 100vh;
+    padding-top: 6rem;
 }
 
+.app__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+}
 
 .app__header_text {
-    text-align: center;
-    color: #fff;
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: var(--color-golden); 
+    font-family: var(--font-base);
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
 }
 
 .header__subtitle {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #fff;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    color: var(--color-grey);
+    max-width: 450px;
 }
 
 .app__header_slider {
+    flex: 1;
     width: 100%;
-    max-width: 100%; 
-    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-luxe);
     overflow: hidden;
-    border-radius: 10px; 
 }
 
 .header__slide-img {
     width: 100%;
-    height: 75vh; 
-    object-fit: cover; 
+    height: 80vh;
+    object-fit: cover;
+    transition: var(--transition-smooth);
 }
 
 
 .slick-dots {
     position: relative;
-    bottom: -15px; 
+    bottom: -15px;
     display: flex !important;
     justify-content: center;
     list-style: none;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .slick-dots li button:before {
     font-size: 12px;
-    color: #fff; 
+    color: #fff;
     opacity: 0.7;
 }
 
 .slick-dots li.slick-active button:before {
-    color: var(--color-golden); 
+    color: var(--color-golden);
     opacity: 1;
 }
 
@@ -99,7 +107,7 @@
     }
 
     .header__slide-img {
-        height: 60vh; 
+        height: 60vh;
     }
 }
 
@@ -113,6 +121,6 @@
     }
 
     .header__slide-img {
-        height: 50vh; 
+        height: 50vh;
     }
 }
